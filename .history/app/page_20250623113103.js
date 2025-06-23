@@ -1,7 +1,7 @@
 import Navbar from "@/components/home/Navbar";
 import Herosection from "@/components/home/Herosection";
 import Program from "@/components/home/Program";
-import Location from"@/components/home/Location";
+import Location from"@/comp
 
 export default function Home() {
   return (
@@ -9,7 +9,6 @@ export default function Home() {
       <Navbar />
       <Herosection />
       <Program />
-      <Location/>
     </div>
   );
 }
