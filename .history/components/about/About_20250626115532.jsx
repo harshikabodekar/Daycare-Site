@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Navbar from "../home/Navbar";
-import Footer from "../home/Footer";
 
 export default function About() {
   return (
@@ -63,7 +62,7 @@ export default function About() {
         </div>
 
     
-        <div className="bg-white p-6 rounded-lg w-full max-w-5xl border-2">
+        <div className="bg-white p-6 border rounded-lg w-full max-w-5xl border-2">
           <h3 className="text-2xl text-black font-semibold mb-2">Values</h3>
           <ul className="list-disc list-inside text-gray-700 space-y-2">
             <li><strong className="text-green-800">Empathy & Inclusion:</strong> Creating an inclusive environment for all children to thrive.
@@ -97,7 +96,6 @@ export default function About() {
           height={200}
         />
       </div>
-      <Footer />
     </>
   );
 }

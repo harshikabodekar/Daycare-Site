@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Navbar from "../home/Navbar";
-import Footer from "../home/Footer";
+import
 
 export default function About() {
   return (
@@ -97,7 +97,6 @@ export default function About() {
           height={200}
         />
       </div>
-      <Footer />
     </>
   );
 }
