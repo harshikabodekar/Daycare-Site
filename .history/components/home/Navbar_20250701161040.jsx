@@ -40,4 +40,3 @@ export default function Navbar() {
     </div>
   );
 }
-3

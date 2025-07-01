@@ -27,9 +27,9 @@ export default function Navbar() {
         </div>
         <div className="flex space-x-8 font-medium text-sm text-black">
           
-          <a  href="/" className="text-purple-700 border-b-2 border-purple-700 pb-1">Home</a>
+          <a  href="home" className="text-purple-700 border-b-2 border-purple-700 pb-1">Home</a>
           <a href="about-us" className="hover:text-purple-600">About Us</a>
-          <a href="programs" className="hover:text-purple-600">Programs</a>
+          <a href="program" className="hover:text-purple-600">Programs</a>
           <a href="#" className="hover:text-purple-600">News & Events</a>
           <a href="#" className="hover:text-purple-600">Careers</a>
           <a href="#" className="hover:text-purple-600">Contact Us</a>
@@ -40,4 +40,3 @@ export default function Navbar() {
     </div>
   );
 }
-3

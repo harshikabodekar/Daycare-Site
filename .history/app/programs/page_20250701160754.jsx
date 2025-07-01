@@ -1,5 +1,5 @@
 import Program from "@/components/Program/Program";
-// import About from "@/components/Program/Program";
+import About from "@/components/Program/Program";
 import Image from "next/image";
 
 export default function Page() {
