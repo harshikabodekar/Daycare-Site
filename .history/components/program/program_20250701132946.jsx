@@ -44,7 +44,7 @@ export default function Program() {
             <p className="text-black">
               <ul>
                 <li>  <strong className="text-green-800">Focus Areas:</strong> The Preschool program at Clearwater Early Learning Centre will revolve around building and strengthening the foundations learned by the students in the Toddler program.</li>
-<li>  <strong className="text-green-800">Child-teacher ratio:</strong>  8:1 student-to-teacher ratio; well-trained & experienced Early Childhood Educators.</li> </ul>
+<li>  <strong className="text-green-800">Child-teacher ratio:</strong>  8:1 student-to-teacher ratio; well-trained & experienced Early Childhood Educators.</ul>
             </p>
           </div>
                 
