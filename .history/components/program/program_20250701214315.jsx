@@ -1,6 +1,5 @@
 import Navbar from "../home/Navbar";
-import Image from "next/image";
-import Footer from "../home/Footer";
+import
 export default function Program() {
   const programs = [
     {
@@ -33,7 +32,7 @@ export default function Program() {
     <>
       <Navbar />
       <div className="bg-purple-100 py-10 px-6 flex justify-between items-center">
-              <h1 className="text-5xl font-bold text-black">Programs</h1>
+              <h1 className="text-5xl font-bold text-black">About Us</h1>
               <Image
                 src="/whale.jpg"
                 alt="whale icon"
@@ -86,7 +85,6 @@ export default function Program() {
           ))}
         </div>
       </div>
-      <Footer />
     </>
   );
 }

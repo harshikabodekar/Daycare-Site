@@ -1,6 +1,6 @@
 import Navbar from "../home/Navbar";
 import Image from "next/image";
-import Footer from "../home/Footer";
+import foo
 export default function Program() {
   const programs = [
     {
@@ -86,7 +86,6 @@ export default function Program() {
           ))}
         </div>
       </div>
-      <Footer />
     </>
   );
 }

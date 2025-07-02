@@ -1,66 +1,68 @@
 import Navbar from "../home/Navbar";
-import Image from "next/image";
-import Footer from "../home/Footer";
+
 export default function Program() {
   const programs = [
     {
       title: "Infants",
-      age: "(12 months to 18 months)",
+      age: "(12 to 18 months)",
       focus: "Creating a nurturing and stimulating environment.",
       ratio: "4:1",
+      icon: "🚗",
     },
     {
       title: "Toddlers",
-      age: "(19 months to 35 months)",
-      focus: "Guide students’ self-discovery during this sensitive stage of development.",
+      age: "(19 to 35 months)",
+      focus: "Guide students’ self-discovery during this sensitive stage.",
       ratio: "6:1",
+      icon: "🛒",
     },
     {
       title: "Pre-schoolers",
-      age: "(3 years to less than 4 years)",
-      focus: "Building and strengthening the foundations learned in the Toddler program.",
+      age: "(3 to <4 years)",
+      focus: "Building and strengthening foundations learned as toddlers.",
       ratio: "8:1",
+      icon: "🤖",
     },
     {
       title: "Kindergarden",
-      age: "(4 years to 6 years)",
-      focus: "Based on Montessori, Waldorf, Reggio, Specialty Enrichment, using emergent curriculum.",
+      age: "(4 to 6 years)",
+      focus: "Based on Montessori, Waldorf, Reggio, Specialty Enrichment.",
       ratio: "10:1",
+      icon: "📚",
     },
   ];
 
   return (
     <>
       <Navbar />
-      <div className="bg-purple-100 py-10 px-6 flex justify-between items-center">
-              <h1 className="text-5xl font-bold text-black">Programs</h1>
-              <Image
-                src="/whale.jpg"
-                alt="whale icon"
-                width={150}
-                height={150}
-                className="rounded-full"
-              />
-            </div>
-      <div className="min-h-screen bg-white py-12 px-4">
+      <div className="min-h-screen bg-white py-10 px-4">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           {programs.map((item, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-200 rounded-xl shadow-sm p-6 flex flex-col space-y-4"
+              className="bg-white border rounded-xl shadow-sm p-6 space-y-4"
             >
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800">
-                  {item.title}{" "}
-                  <span className="text-gray-500 font-normal">{item.age}</span>
-                </h3>
+              <div className="flex items-start space-x-4">
+                <div className="p-3 bg-green-50 rounded-full text-2xl">
+                  {item.icon}
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    {item.title}{" "}
+                    <span className="text-gray-500 font-normal">
+                      {item.age}
+                    </span>
+                  </h3>
+                </div>
               </div>
               <ul className="text-sm text-gray-700 space-y-2 list-disc list-inside">
                 <li>
                   <span className="font-medium">Focus Areas:</span> {item.focus}
                 </li>
                 <li>
-                  <span className="font-medium">Child-teacher ratio:</span> {item.ratio} student-to-teacher ratio, well-trained & experienced Early Childhood Educators.
+                  <span className="font-medium">Child-teacher ratio:</span>{" "}
+                  {item.ratio} student-to-teacher ratio, well-trained &
+                  experienced educators.
                 </li>
               </ul>
               <a
@@ -86,7 +88,6 @@ export default function Program() {
           ))}
         </div>
       </div>
-      <Footer />
     </>
   );
 }

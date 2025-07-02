@@ -1,6 +1,5 @@
 import Navbar from "../home/Navbar";
-import Image from "next/image";
-import Footer from "../home/Footer";
+
 export default function Program() {
   const programs = [
     {
@@ -32,16 +31,6 @@ export default function Program() {
   return (
     <>
       <Navbar />
-      <div className="bg-purple-100 py-10 px-6 flex justify-between items-center">
-              <h1 className="text-5xl font-bold text-black">Programs</h1>
-              <Image
-                src="/whale.jpg"
-                alt="whale icon"
-                width={150}
-                height={150}
-                className="rounded-full"
-              />
-            </div>
       <div className="min-h-screen bg-white py-12 px-4">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           {programs.map((item, index) => (
@@ -86,7 +75,6 @@ export default function Program() {
           ))}
         </div>
       </div>
-      <Footer />
     </>
   );
 }

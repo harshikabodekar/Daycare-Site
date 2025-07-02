@@ -86,7 +86,6 @@ export default function Program() {
           ))}
         </div>
       </div>
-      <Footer />
     </>
   );
 }
