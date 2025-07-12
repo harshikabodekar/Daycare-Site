@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Program() {
   return (
     <div className="bg-white text-black flex flex-col items-center justify-center py-10">
-      <h2 className="text-2xl font-bold mb-6">Our Programs !!</h2>
+      <h2 className="text-2xl font-bold mb-6">Our Programs </h2>
       <div className="relative w-full max-w-5xl">
         <Image
           src="/program.jpg"
